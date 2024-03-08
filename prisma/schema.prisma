@@ -20,7 +20,8 @@ enum Gender {
 }
 
 model post {
-  author_name Int      @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
+  author_name String
   age         Int
   gender      Gender
   isDeleted   Boolean  @default(false)
