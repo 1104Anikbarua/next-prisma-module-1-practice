@@ -4,9 +4,9 @@ const prisma = new PrismaClient();
 
 const main = async () => {
   const getPosts = await prisma.post.findFirst({
-    where: { isDeleted: false },
+    where: { gender: "Female" },
   });
-  console.log(getPosts);
+  // console.log(getPosts);
 };
 
 main();
